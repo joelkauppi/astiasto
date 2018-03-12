@@ -1,0 +1,95 @@
+
+
+<div>
+  <form name="contactform" method="post">{% csrf_token %}
+      {{form.as_p}}
+      <div class="form-group">
+        <button class="btn" type="submit" id="send" name="send">Lähetä tarjouspyyntö</button>
+      </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+<div class="form-section">
+  {% for field in new_order_form %}
+
+<div class="form-group">
+  <label for="id_{{ field.label }}" class="col-form-label">{{ field.name }}</label>
+  {{ field }}
+  {% for error in field.errors %}
+    <p style="color: red">{{ error }}</p>
+  {% endfor %}
+</div>
+{% endfor %}
+<datalist id="amounts">
+  <option value="10" label="10">
+  <option value="20" label="20">
+  <option value="30" label="30">
+  <option value="40" label="40">
+  <option value="50" label="50">
+  <option value="60" label="60">
+  <option value="70" label="70">
+  <option value="80" label="80">
+  <option value="90" label="90">
+  <option value="100" label="100">
+  <option value="110" label="110">
+  <option value="120" label="120">
+  <option value="130" label="130">
+  <option value="140" label="140">
+  <option value="150" label="150">
+  <option value="160" label="160">
+  <option value="170" label="170">
+  <option value="180" label="180">
+  <option value="190" label="190">
+  <option value="200" label="200">
+  <option value="210" label="210">
+  <option value="220" label="220">
+</datalist>
+
+
+<h3>Henkilötiedot</h3>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="firstname" name="firstname" placeholder="Etunimi" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="lastname" name="lastname" placeholder="Sukunimi" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="email" id="email" name="email" placeholder="Sähköposti" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="phonenumber" name="phonenumber" placeholder="Puhelinnumero">
+</div>
+</div>
+<div class="form-section">
+<h3>Tilaustiedot</h3>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="event" name="event" placeholder="Tapahtuma" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="date" id="date" name="date" placeholder="Päivänmäärä" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="place" name="place" placeholder="Tapahtumapaikka">
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="number" min="0" max="220" step="1" list="amounts" id="amount" name="amount" placeholder="Määrä (max 220)" required>
+</div>
+<div class="form-group">
+  <input class="form-control-lg" type="text" id="message" name="message" placeholder="Viesti" required>
+</div>
+<div class="form-group">
+  <button class="btn" type="submit" id="send" name="send">Lähetä tarjouspyyntö</button>
+</div>
+{% endcomment %}

@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    {% block og_tags %}
+      <meta property="fb:app_id" content="182652785659195" />
+      <meta property="og:title" content="Astiavuokraus" />
+      <meta property="og:url" content="{{ get_absolute_uri }}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png" />
+    {% endblock %}
+
+  </head>
+  <body>
+
+  {% block content %}
+  <div class="front-container">
+      <h1>
+        Heellooo!
+      </h1>
+      <img src="{% static 'img/aveclasit.jpg' %}" width="30%" height="30%" id="aveclasit" >
+  {% endblock %}
+  </div>
+</body>
+</html>

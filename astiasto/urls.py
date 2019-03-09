@@ -8,4 +8,5 @@ urlpatterns = [
     path('vuokraa/', views.rent, name='rent'),
     path('vuokraa/valmis/', views.ordersent, name='ordersent'),
     path('vuokrausehdot/', views.terms, name='terms'),
+    path('kalenteri/', views.calendar, name='calendar'),
 ]

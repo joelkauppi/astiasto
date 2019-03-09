@@ -3,18 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     {% block og_tags %}
 
     {% endblock %}
-
   </head>
   <body>
   {% block content %}
       <h1>
         Kiitoksia yhteydenotostasi!
       </h1>
-
+      <h3>Vastaamme teille mahdollisimman pian<h3>
+      <a href="{% url 'astiasto:index' %}">Takaisin etusivulle</a>
   {% endblock %}
 </body>
 </html>

@@ -1,0 +1,54 @@
+<h2>Astiaston yleiset vuokrausehdot</h2>
+<div style="padding: 5px">
+1. Astioiden vuokra sisältää toimituskulut vuokraajan
+ilmoittamaan osoitteeseen Otaniemen aluuella ja takaisinnoudon
+samasta osoitteesta. Toimituksista muille alueille peritään erillinen maksu.
+Mikäli vuokraosoitteen eteen ei ole mahdollista ajaa ajoneuvolla vastaa vuokraaja
+kahden apuhenkilön järjestämisestä astioiden purkua ja
+lastausta varten sovittuina ajankohtina. ‬
+</div>
+<div style="padding: 5px">
+2. Astiat vuokrataan sovituksi ajaksi. Mikäli vuokralainen
+ei luovuta astioita vuokra-ajan päättyessä kohdan 7
+mukaisesti pakattuna, on Otaniemen JS-Palvelu Oy:llä oikeus
+veloittaa vuokra lisäajalta, kuitenkin vähintään
+yhdeltä vuorokaudelta.
+</div>
+<div style="padding: 5px">
+3. Astiat ja muut kalusteet ovat Otaniemen JS-Palvelu Oy:n
+omaisuutta ja vuokraaja on vastuussa niistä vuokra-
+ajan.
+</div>
+<div style="padding: 5px">
+4. Vuokraajalla ei ole oikeutta luovuttaa eikä edelleen
+vuokrata astioita ilman Otaniemen JS-Palvelu Oy:n lupaa.
+</div>
+<div style="padding: 5px">
+5. Vuokraaja sitoutuu käyttämään astioita vain sovittuun
+käyttötarkoitukseen.
+</div>
+<div style="padding: 5px">
+6. Käyttäjä on velvollinen kustantamaan hajoavat astiat,
+mutta yksittäisiä vahingossa tapahtuneita hajoamisia ei
+laskuteta erikseen. Vuokralainen on velvollinen
+ilmoittamaan astioiden palautuksen yhteydessä
+hajonneista astioista. Ilmoituksen voi tehdä joko
+sanallisesti tai kirjallisesti esimerkiksi
+toimituslomakkeelle.
+</div>
+<div style="padding: 5px">
+7. Astiat tulee käytön jälkeen asettaa kullekin
+astiatyypille tarkoitettuihin pesupakkeihin, joissa ne
+otettiin myös vastaan. Astioita ei tarvitse pestä
+käytön jälkeen, mutta isoimmat ruuantähteet tulee
+kaataa pois lautasilta, jotta ne eivät pinottaessa
+hajoa.
+</div>
+<div style="padding: 5px">
+8. Otaniemen JS-Palvelu Oy:n vastuu rajoittuu enintään tarvikkeiden
+vuokraushintaan. Otaniemen JS-palvelu Oy ei vastaa toimitusvirheestä
+tai -viivästyksestä asiakkaalle aiheutuvista vahingoista
+kuten osallistumismaksujen palautuksista.
+</div>
+
+</div>

@@ -29,15 +29,27 @@ def rent(request):
             amount = request.POST.get('amount', '')
             place = request.POST.get('place', '')
             phone = request.POST.get('phone','')
-
-            # Email the profile with the
-            # contact information
-            template = get_template('contact_template.txt')
             context = {
                 'contact_name': contact_name,
                 'contact_email': contact_email,
                 'form_content': form_content,
+
+
             }
+            for i in Item.objects.all():
+                v = i.name
+                context[v] = request.POST.get(v, '')
+            #for i in Item.objects.all():
+            #    context = {
+            #        context,
+
+
+            #    }
+
+            # Email the profile with the
+            # contact information
+            template = get_template('contact_template.txt')
+
             content = template.render(context)
 
             email = EmailMessage(

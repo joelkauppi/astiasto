@@ -9,4 +9,9 @@ Amount:
 {{ amount }}
 
 Content:
+
 {{ form_content|safe|striptags }}
+
+Kerma
+
+{{ Kermakko }}

@@ -6,24 +6,24 @@
 <html lang="en">
   <head>
 
-    {% block og_tags %}
-      <meta property="fb:app_id" content="182652785659195" />
-      <meta property="og:title" content="Astiavuokraus" />
-      <meta property="og:url" content="{{ get_absolute_uri }}" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png" />
-    {% endblock %}
 
   </head>
   <body>
 
-  {% block content %}
-  <div class="front-container">
-      <h1>
-        Heellooo!
-      </h1>
-      <img src="{% static 'img/aveclasit.jpg' %}" width="30%" height="30%" id="aveclasit" >
-  {% endblock %}
-  </div>
-</body>
+    {% block content %}
+      <img src="{% static 'img/fuksien juhlasitsipöytä.jpg' %}" width="100%" height="30%">
+        <p>
+          Otaniemen astiapalvelu on Espoon Otaniemessä toimiva astiavuokraamo.
+          Vuokraamme astioita jopa 220 hengen illallistilaisuuksiin
+          pääkaupunkiseudulla joustavasti ja edullisesti asiakkaan tarpeiden mukaan.
+        </p>
+        <a href="{% url 'astiasto:rent' %}" style="color:#eeeeee;">  <button class="btn btn-secondary">Vuokraamaan</button></a>
+
+        <!--<img src="{% static 'img/aveclasit.jpg' %}" id="aveclasit"> -->
+
+
+        <img class="my-4" src="{% static 'img/astiastokuva red.jpg' %}" width="100%" height="30%">
+    {% endblock %}
+
+  </body>
 </html>

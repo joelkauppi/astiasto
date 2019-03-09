@@ -6,6 +6,7 @@
   <body>
   {% csrf_token %}
   {% block content %}
+  <div class="content">
     <h1 class="text-center">Astiasto</h1>
     <p> Valitse alta tarvitsemasi astiat ja niiden määrät tarjousta varten. Otaniemen
       ulkopuolelle toimitettavien tarjouksen hintaan lisätään toimitusmaksu toimitusmatkan
@@ -36,7 +37,6 @@
 
 
       </div>
-    </div>
     <div class="container my-2">
       <form method="post">
         {% csrf_token %}
@@ -81,7 +81,7 @@
     </div>
     </form>
 
-
+  </div>
     {% endblock %}
   </body>
 </html>

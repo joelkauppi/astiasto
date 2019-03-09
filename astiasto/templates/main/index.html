@@ -11,19 +11,19 @@
   <body>
 
     {% block content %}
-      <img class="my-4" src="{% static 'img/astiastokuva red.jpg' %}" width="100%" height="30%">
-
+      <img src="{% static 'img/astiastokuva red.jpg' %}" width="100%" height="30%">
+      <div class="content">
         <p>
           Otaniemen astiapalvelu on Espoon Otaniemessä toimiva astiavuokraamo.
           Vuokraamme astioita jopa 220 hengen illallistilaisuuksiin
           pääkaupunkiseudulla joustavasti ja edullisesti asiakkaan tarpeiden mukaan.
         </p>
         <a href="{% url 'astiasto:rent' %}" style="color:#eeeeee;">  <button class="btn btn-secondary">Vuokraamaan</button></a>
-
+      <br><br>
         <!--<img src="{% static 'img/aveclasit.jpg' %}" id="aveclasit"> -->
 
         <img src="{% static 'img/fuksien juhlasitsipöytä.jpg' %}" width="100%" height="30%">
-
+    </div>
     {% endblock %}
 
   </body>

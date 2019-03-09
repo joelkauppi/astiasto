@@ -9,11 +9,13 @@
   </head>
   <body>
   {% block content %}
+  <div class="content">
       <h1>
         Kiitoksia yhteydenotostasi!
       </h1>
       <h3>Vastaamme teille mahdollisimman pian<h3>
       <a href="{% url 'astiasto:index' %}">Takaisin etusivulle</a>
+    </div>
   {% endblock %}
 </body>
 </html>

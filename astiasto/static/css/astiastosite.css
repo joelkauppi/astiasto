@@ -17,6 +17,10 @@ body {
   }
 }
 
+.content {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
 .googleCalendar{
   position: relative; padding-bottom: 50%; height: 0; overflow: hidden;
 }
@@ -38,7 +42,7 @@ body {
   text-align: center;
   width:100%;
   padding: 4rem;
-  background-color: #B60909;
+  background-color: #990000;
   color: #eeeeee;
   right: 0;
   bottom: 0;
@@ -52,12 +56,13 @@ body {
 }
 
 .navbar {
-  background-color: #B60909;
+  background-color: #990000;
   color: #eeeeee;
 }
 
 .btn {
-  background-color: #B60909;
+  background-color: #990000;
+;
 }
 
 img {

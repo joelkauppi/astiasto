@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'astiasto',
 
 ]
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -53,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
 ]
 
 ROOT_URLCONF = 'astiastosite.urls'
@@ -125,9 +125,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
+SERVER_EMAIL = 'infooveriq@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = SERVER_EMAIL
+EMAIL_HOST_PASSWORD = 'AstiastoP4ssu'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+ADMINS = [
+    ('Astiasto', 'astiasto@jalostajat.fi'),
+]
+
+MANAGERS = ADMINS
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

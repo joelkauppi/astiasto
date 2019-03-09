@@ -4,11 +4,26 @@ body {
     margin:0;
     background-color: #eeeeee;
     color: #000000;
-
-
 }
 
+@media (min-width: 1200px){
+  .googleCalendar{
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    width: 70%;
+    left: 15%; //Half of the width does the trick ;)
+  }
+}
 
+.googleCalendar{
+  position: relative; padding-bottom: 50%; height: 0; overflow: hidden;
+}
+
+.googleCalendar iframe{
+  position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
 
 .form-group {
   margin: 0 auto;
@@ -45,8 +60,6 @@ body {
   background-color: #B60909;
 }
 
-
-
 img {
 
 }
@@ -54,11 +67,13 @@ img {
  .dee > h2 {
    text-align: center;
  }
+
  #div1, #aboutpar {
    position: relative;
    left:25%;
    width:50%;
  }
+
 .tablewareimage {
        width: 50px;
        height: 50px;

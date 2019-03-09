@@ -73,3 +73,8 @@ def terms(request):
     #temp = get_template('terms.txt')
     #context = {'terms': temp}
     return render(request, 'main/terms.html')
+
+def calendar(request):
+    #temp = get_template('terms.txt')
+    #context = {'terms': temp}
+    return render(request, 'main/calendar.html')

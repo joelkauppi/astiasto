@@ -1,4 +1,3 @@
-<h2>Astiaston yleiset vuokrausehdot</h2>
 <div style="padding: 5px">
 1. Astioiden vuokra sisältää toimituskulut vuokraajan
 ilmoittamaan osoitteeseen Otaniemen aluuella ja takaisinnoudon

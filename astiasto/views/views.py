@@ -5,7 +5,7 @@ from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template import Context
 from django.template.loader import get_template
-from astiasto.models import Item
+from astiasto.models import Item, Genre
 
 def index(request):
     return render(request, 'main/index.html')
@@ -15,6 +15,7 @@ def about(request):
 
 def rent(request):
     items = Item.objects.all()
+    genres = Genre.objects.all()
     form_class = OrderForm
     if request.method == 'POST':
         form = form_class(data=request.POST)
@@ -63,7 +64,7 @@ def rent(request):
             return redirect('valmis/')
 
     return render(request, 'main/rent.html', {
-        'form': form_class, 'items':items
+        'form': form_class, 'items':items, 'genres':genres
     })
 def ordersent(request):
     form = {}

@@ -21,7 +21,7 @@ $(() => {
       $(".total-price").each(function() {
         var value = $(this).text().replace('€', '');
         console.log(value);
-        if (!isNaN(value) && value.length != 0) {
+        if (!isNaN(value) && value.length != 0 && value >= 0 ) {
           sum += parseFloat(value)
         }
       });
@@ -31,7 +31,13 @@ $(() => {
   function update() {
     var amount = parseInt($(this).val());
     var net = parseFloat($(this).parent('div').find(".price").attr('value'));
-    var tot = amount * net;
+    var tot;
+    if (!isNaN(amount) && amount >= 0) {
+      var tot = amount * net;
+    } else {
+      tot = tot;
+    }
+
     $(this).parent('div').find(".total-price").text(precisionRound(tot, 2) + " €");
     $(".bill-total").text(calculateSum() + " €");
   }

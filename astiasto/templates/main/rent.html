@@ -47,7 +47,7 @@
                                   <h6>Yhteensä: <span class="total-price">0.00 €</span></h6>
                               </div>
                           </div>
-                      {% if forloop.counter|divisibleby:6 %}</div><div class="row">{% endif %}
+                      {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
                       {% if forloop.last %}</div>{% endif %}
                     {% endif %}
                 {% endfor %}
